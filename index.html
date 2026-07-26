@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Как вывести токены Grass ($GRASS), актуальная эпоха, курс монеты и свежие новости проекта. Подробный гайд с инструкциями.">
+    <link rel="canonical" href="https://Laracoper.github.io/grass-guide/index.html">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Laracoper/grass-guide.git/">
+    <meta property="og:title" content="Grass Network: Полное руководство по токену GRASS">
+    <meta property="og:image" content="./img/logo.png"> <!-- Убедитесь, что путь верный -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/Laracoper/grass-guide.git/">
+    <meta property="twitter:title" content="Grass Network: Полное руководство по токену GRASS">
+    <meta property="twitter:image" content="./img/logo.png">
+    <title>Grass Network — как ваш интернет помогает обучать нейросети (и приносит доход)</title>
+    <link rel="shortcut icon" href="img/icons/link-img.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Хедер с логотипом -->
+    <div class="hero-banner">
+        <h1>Гайд по проекту Grass Network: всё о токенах $GRASS</h1>
+        <p>Самый подробный справочник по фармингу, выводу средств и текущему курсу. Собрали ответы на главные запросы
+            пользователей.</p>
+
+    </div>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="how-to-withdraw.html">Как вывести</a>
+        <a href="current-epoch.html">Эпохи</a>
+        <a href="grass-rate.html">Курс</a>
+        <a href="news.html">Новости</a>
+
+        <div class="ref-nav-block">
+            <input type="text" id="nav-ref-link-news" value="https://app.grass.io/register?referralCode=pkUHcCxGJYfDa7g"
+                readonly>
+            <button class="copy-btn-small" onclick="copyNewsRef()">Копировать</button>
+        </div>
+    </nav>
+
+    <!-- контент -->
+    <h1> Grass Network — как ваш интернет помогает обучать нейросети (и приносит доход)</h1>
+    <p>🌐 <b>Grass Network</b> — это децентрализованная сеть (DePIN), которая превращает неиспользуемую полосу
+        пропускания вашего интернета в инструмент сбора данных для искусственного интеллекта. Вместо того чтобы платить
+        за прокси-серверы или строить собственные дата-центры, компании используют распределенную сеть из миллионов
+        домашних компьютеров, которые добровольно делятся своим трафиком через специальное расширение браузера или
+        приложение.</p>
+    <h3>Схема работы сети проста:</h3>
+    <ul>
+        <li>📱 Пользователи устанавливают ноду Grass, делясь частью своего трафика с сетью.</li>
+        <li>🚀 Сеть маршрутизирует запросы от AI-компаний через эти узлы, собирая публичные веб-данные: тексты, HTML,
+            изображения и видео.</li>
+        <li>💰 За предоставленные гигабайты пользователи получают вознаграждение в виде токенов $GRASS и очков сети
+            (Network Points).</li>
+    </ul>
+    <p>В первом квартале 2025 года сеть обработала свыше <b>57 млн GB</b> публичных данных, а пиковый объем достигал
+        <b>1,1 млн GB
+            в день.</b> Это уже не «игрушка», а реальный поставщик данных для обучения современных LLM-моделей и
+        мультимодальных
+        ассистентов.
+    </p>
+
+    <h2>Почему это важно?</h2>
+    <p>Традиционно сбор данных был дорогим удовольствием. Прокси-провайдеры вроде Bright Data берут от $5 до $12 за
+        каждый гигабайт трафика, а P2P-сети типа PacketStream — около $1/GB. Grass стремится конкурировать именно в этом
+        диапазоне, но предлагает уникальные преимущества:</p>
+    <ul>
+        <li>✅ Географически разнообразный трафик (residential IP).</li>
+        <li>✅ Специализация на данных для ИИ: готовые датасеты, мультимедиа, RAG-интеграция.</li>
+        <li>⛔ Юридическая ответственность лежит на заказчике, так как сеть работает только с публичным контентом,
+            доступным любому пользователю без авторизации.</li>
+    </ul>
+    <p>Для пользователей это возможность получить пассивный доход за то, что их компьютер просто подключен к сети. Доход
+        зависит от географии узла, стабильности соединения и правил распределения поинтов. Для большинства участников
+        это небольшой бонус, а не замена зарплате.</p>
+
+    <h2>Как это устроено изнутри?</h2>
+    <h3>Архитектура <em>Grass</em> состоит из трех основных ролей:</h3>
+    <ol>
+        <li><b>Узлы (Nodes)</b> — домашние компьютеры пользователей.</li>
+        <li><b>Маршрутизаторы (Routers)</b> — мощные серверы, распределяющие нагрузку между узлами.</li>
+        <li><b>Проверяющие (Validators)</b> — обеспечивают безопасность и проверяют данные при помощи технологии
+            нулевого разглашения (ZK-proofs). Это гарантирует прозрачность происхождения данных и исключает риск
+            отравления датасетов.</li>
+    </ol>
+    <p>Надежность сети обеспечивается переходом к децентрализованному комитету валидаторов. В будущем планируется
+        создание независимого слоя данных (Sovereign Data Rollup), что повысит устойчивость к цензуре и доверие к
+        проекту.</p>
+    <h2>Что ждет проект в 2026 году?</h2>
+    <p>✉️ Аирдроп второго сезона: ожидается раздача примерно 170 миллионов токенов GRASS (~17% от общего предложения).
+        Право на участие получат операторы узлов с высокой стабильностью работы. Это может оказать давление на цену,
+        если спрос будет низким, но долгосрочно стимулирует рост сети.</p>
+    <p>💳 Новый кошелек: запуск встроенного некстендального кошелька, интегрированного с MoonPay и Jupiter. Теперь
+        пользователи смогут легко конвертировать свои награды в фиат или другие активы.</p>
+    <p>🟢 Вознаграждения в USDC: выплаты будут производиться в стейблкоине, что обеспечит стабильность дохода операторов
+        узлов.</p>
+
+    <!-- Блок для автокопирования реферальной ссылки -->
+    <section class="referral-block">
+        <h2>Ваша реферальная ссылка:</h2>
+        <p>Поделитесь ей с друзьями, чтобы получать бонусы за их регистрацию:</p>
+
+        <div class="ref-link-container">
+            <span id="referral-text"
+                class="ref-link-text">https://app.grass.io/register?referralCode=pkUHcCxGJYfDa7g</span>
+            <button id="copy-btn" class="btn-copy-main">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-1.99.9-1.99 2L6 21c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V7l-4-4z" />
+                    <path d="M14 3v4h4V3h-4zm-6 0v4h4V3H8z" />
+                </svg>
+                Скопировать
+            </button>
+        </div>
+        <p id="copy-status" class="status-message"></p>
+    </section>
+
+    <!-- содержание -->
+    <h2>Содержание:</h2>
+    <ul>
+        <li><a href="how-to-withdraw.html"><strong>Как вывести токены Grass</strong> — полная инструкция с комиссиями
+                сети Solana</a></li>
+        <li><a href="current-epoch.html"><strong>Актуальная эпоха Grass:</strong> когда сброс счетчика XP?</a></li>
+        <li><a href="grass-rate.html"><strong>Какой курс у Grass ($GRASS)</strong> сегодня? График и прогноз цены</a>
+        </li>
+    </ul>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© 2026 Grass Guide. Все права защищены.</small>
+            <small>Разработчик сайта: <a href="https://github.com/Laracoper" target="_blank"
+                    rel="noopener noreferrer">Ламзин Алексей</a></small>
+        </div>
+    </footer>
+
+    <script>
+        function copyNavRef() {
+            const link = document.getElementById('nav-ref-link');
+            link.select();
+            document.execCommand('copy'); // Современный способ: navigator.clipboard.writeText(link.value);
+            alert('Реферальная ссылка скопирована!');
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

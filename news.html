@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Новости Grass | Июль 2026</title>
+    <link rel="shortcut icon" href="img/icons/link-img.png" type="image/x-icon">
+     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Laracoper/grass-guide.git/">
+    <meta property="og:title" content="Grass Network: Полное руководство по токену GRASS">
+    <meta property="og:image" content="./img/logo.png"> <!-- Убедитесь, что путь верный -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/Laracoper/grass-guide.git/">
+    <meta property="twitter:title" content="Grass Network: Полное руководство по токену GRASS">
+    <meta property="twitter:image" content="./img/logo.png">
+    <title>Grass Network — как ваш интернет помогает обучать нейросети (и приносит доход)</title>
+    <link rel="shortcut icon" href="img/icons/link-img.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- баннер -->
+    <div class="hero-banner">
+        <h1>Свежие новости Grass Network</h1>
+        <p>Последние обновления дропа, листингов и изменений в эпохах.</p>
+    </div>
+
+    <!-- навигация -->
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="how-to-withdraw.html">Как вывести</a>
+        <a href="current-epoch.html">Эпохи</a>
+        <a href="grass-rate.html">Курс</a>
+        <a href="news.html">Новости</a>
+
+        <div class="ref-nav-block">
+            <input type="text" id="nav-ref-link-news" value="https://app.grass.io/register?referralCode=pkUHcCxGJYfDa7g"
+                readonly>
+            <button class="copy-btn-small" onclick="copyNewsRef()">Копировать</button>
+        </div>
+    </nav>
+
+    <!-- контент -->
+    <div class="news-grid">
+        <!-- Карточка 1 -->
+        <div class="news-card">
+            <img src="img/icons/4.png" class="news-card-img"
+                alt="Скриншот интерфейса Claim">
+            <div class="news-card-body">
+                <div class="news-card-date">26 июля 2026</div>
+                <h3>Завершен основной снапшот Season 1</h3>
+                <p>Команда официально объявила срез базы данных. Балансы заморожены. Ожидается открытие окна Claim в
+                    течение 72 часов. Обязательно обновите расширение до версии 4.2.1.</p>
+            </div>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="news-card">
+            <img src="img/icons/2.png" class="news-card-img"
+                alt="Логотип биржи Bybit">
+            <div class="news-card-body">
+                <div class="news-card-date">25 июля 2026</div>
+                <h3>Bybit подтвердила листинг $GRASS</h3>
+                <p>Торговые пары GRASS/USDT станут доступны сразу после клейма. Также запущен Launchpool для холдеров
+                    BIT, где можно застейкать активы для получения бесплатных токенов Grass.</p>
+            </div>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="news-card">
+            <img src="img/icons/1.png" class="news-card-img"
+                alt="График распределения весов">
+            <div class="news-card-body">
+                <div class="news-card-date">24 июля 2026</div>
+                <h3>Изменение весовых коэффициентов</h3>
+                <p>Введен временный х2 коэффициент для узлов Африки и Ближнего Востока. Пользователи из Европы сообщают
+                    о снижении доходности в Epoch №145, но общий объем данных вырос на 30%.</p>
+            </div>
+        </div>
+
+        <!-- Карточка 4 -->
+        <div class="news-card">
+            <img src="img/icons/link-img.png" class="news-card-img"
+                alt="Интерфейс Telegram бота">
+            <div class="news-card-body">
+                <div class="news-card-date">23 июля 2026</div>
+                <h3>Интеграция с мессенджером Telegram</h3>
+                <p>Появилась первая утилита для мониторинга баланса очков прямо в Telegram. Напоминаем: никогда не
+                    вводите сид-фразу в ботов, используйте только Public Key вашего кошелька.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок для автокопирования реферальной ссылки -->
+    <section class="referral-block">
+        <h2>Ваша реферальная ссылка:</h2>
+        <p>Поделитесь ей с друзьями, чтобы получать бонусы за их регистрацию:</p>
+
+        <div class="ref-link-container">
+            <span id="referral-text"
+                class="ref-link-text">https://app.grass.io/register?referralCode=pkUHcCxGJYfDa7g</span>
+            <button id="copy-btn" class="btn-copy-main">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-1.99.9-1.99 2L6 21c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V7l-4-4z" />
+                    <path d="M14 3v4h4V3h-4zm-6 0v4h4V3H8z" />
+                </svg>
+                Скопировать
+            </button>
+        </div>
+        <p id="copy-status" class="status-message"></p>
+    </section>
+
+    <!-- содержание -->
+    <h2>Содержание:</h2>
+    <ul>
+        <li><a href="how-to-withdraw.html"><strong>Как вывести токены Grass</strong> — полная инструкция с комиссиями
+                сети Solana</a></li>
+        <li><a href="current-epoch.html"><strong>Актуальная эпоха Grass:</strong> когда сброс счетчика XP?</a></li>
+        <li><a href="grass-rate.html"><strong>Какой курс у Grass ($GRASS)</strong> сегодня? График и прогноз цены</a>
+        </li>
+    </ul>
+
+    <!-- футер -->
+    <footer class="site-footer">
+        <div class="container">
+            <small>© 2026 Grass Guide. Все права защищены.</small>
+            <small>Разработчик сайта: <a href="https://github.com/Laracoper" target="_blank"
+                    rel="noopener noreferrer">Ламзин Алексей</a></small>
+        </div>
+    </footer>
+
+    <script>
+        function copyNewsRef() {
+            const link = document.getElementById('nav-ref-link-news');
+            link.select();
+            document.execCommand('copy');
+            alert('Ссылка скопирована!');
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

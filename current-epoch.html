@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Актуальная эпоха Grass | Когда закончится текущий сезон и будет сброс?</title>
+    <link rel="shortcut icon" href="img/icons/link-img.png" type="image/x-icon">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Laracoper/grass-guide.git/">
+    <meta property="og:title" content="Grass Network: Полное руководство по токену GRASS">
+    <meta property="og:image" content="./img/logo.png"> <!-- Убедитесь, что путь верный -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/Laracoper/grass-guide.git/">
+    <meta property="twitter:title" content="Grass Network: Полное руководство по токену GRASS">
+    <meta property="twitter:image" content="./img/logo.png">
+    <title>Grass Network — как ваш интернет помогает обучать нейросети (и приносит доход)</title>
+    <link rel="shortcut icon" href="img/icons/link-img.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hero-banner">
+        <h1>Актуальная эпоха (Epoch) в Grass Network: даты, таймер и правила сброса</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="how-to-withdraw.html">Как вывести</a>
+        <a href="current-epoch.html">Эпохи</a>
+        <a href="grass-rate.html">Курс</a>
+        <a href="news.html">Новости</a>
+
+        <div class="ref-nav-block">
+            <input type="text" id="nav-ref-link-news" value="https://app.grass.io/register?referralCode=pkUHcCxGJYfDa7g"
+                readonly>
+            <button class="copy-btn-small" onclick="copyNewsRef()">Копировать</button>
+        </div>
+    </nav>
+
+    <h1>Актуальная эпоха (Epoch) в Grass Network: даты, таймер и правила сброса</h1>
+    <p>Если вы давно участвуете в проекте Grass, то наверняка заметили понятие «Эпоха». Это фундаментальный элемент
+        геймификации всей сети. Эпоха представляет собой фиксированный временной отрезок, обычно составляющий семь
+        календарных дней, в течение которого подсчитывается ваш вклад в работу сети. Именно от объема переданных
+        мегабайт данных и времени аптайма вашей ноды зависит, сколько баллов упадет на ваш баланс в конце периода.
+        Понимание механики эпох критически важно для максимизации прибыли, так как многие скрытые мультипликаторы и
+        баунти-задачи сбрасываются вместе с таймером.</p>
+    <p>На сегодняшний день точная механика перехода между сезонами держится командой в секрете, чтобы предотвратить
+        накрутку статистики в последние часы. Однако исторически сложилось правило: активная эпоха заканчивается ровно в
+        полночь по всемирному координированному времени (UTC+0). В интерфейсе приложения Grass Extension обычно
+        отображается круговой прогресс-бар. Когда он заполняется, начинается период технического обслуживания
+        длительностью около часа. В это время статистика не обновляется, а ваши гигабайты копятся вхолостую.
+        Рекомендуется не выключать компьютер или роутер в эти первые минуты новой эпохи, чтобы поймать возможные бонусы
+        «Первого часа».</p>
+    <p>Главный вопрос участников — какой сейчас номер актуальной эпохи и когда ждать глобального сброса (Season Reset)?
+        Глобальный сброс знаменует окончание всего первого сезона фарминга и предшествует раздаче токенов. В отличие от
+        еженедельных эпох, которые просто обнуляют ваш недельный счетчик ради выдачи очередных XP, глобальный сброс
+        зафиксирует вашу общую долю в пироге распределения токенов. На данный момент мы находимся глубоко внутри первого
+        сезона. Каждая новая неделя приносит изменения в коэффициентах: например, провайдеры из Южной Америки или Азии
+        могут получить повышенный множитель веса (Weight Multiplier) на пару эпох, чтобы выровнять географическое
+        покрытие сети. Ваша стратегия должна строиться вокруг непрерывной работы расширения. Пропуск даже одной-двух
+        эпох сильно просаживает ваш средний показатель за месяц, который алгоритмы могут учитывать при итоговом снэпе
+        (снимке) кошельков для дропа. Следите за официальными анонсами в X (Twitter) проекта: разработчики всегда
+        предупреждают за 24 часа до любых изменений в длине эпохи или правилах начисления.</p>
+
+    <!-- Блок для автокопирования реферальной ссылки -->
+    <section class="referral-block">
+        <h2>Ваша реферальная ссылка:</h2>
+        <p>Поделитесь ей с друзьями, чтобы получать бонусы за их регистрацию:</p>
+
+        <div class="ref-link-container">
+            <span id="referral-text"
+                class="ref-link-text">https://app.grass.io/register?referralCode=pkUHcCxGJYfDa7g</span>
+            <button id="copy-btn" class="btn-copy-main">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-1.99.9-1.99 2L6 21c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V7l-4-4z" />
+                    <path d="M14 3v4h4V3h-4zm-6 0v4h4V3H8z" />
+                </svg>
+                Скопировать
+            </button>
+        </div>
+        <p id="copy-status" class="status-message"></p>
+    </section>
+
+    <!-- содержание -->
+    <h2>Содержание:</h2>
+    <ul>
+        <li><a href="how-to-withdraw.html"><strong>Как вывести токены Grass</strong> — полная инструкция с комиссиями
+                сети Solana</a></li>
+        <li><a href="current-epoch.html"><strong>Актуальная эпоха Grass:</strong> когда сброс счетчика XP?</a></li>
+        <li><a href="grass-rate.html"><strong>Какой курс у Grass ($GRASS)</strong> сегодня? График и прогноз цены</a>
+        </li>
+    </ul>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© 2026 Grass Guide. Все права защищены.</small>
+            <small>Разработчик сайта: <a href="https://github.com/Laracoper" target="_blank"
+                    rel="noopener noreferrer">Ламзин Алексей</a></small>
+        </div>
+    </footer>
+
+    <script>
+        function copyNewsRef() {
+            const link = document.getElementById('nav-ref-link-news');
+            link.select();
+            document.execCommand('copy');
+            alert('Ссылка скопирована!');
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

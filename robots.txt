@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://Laracoper.github.io/grass-guide/sitemap.xml
+
