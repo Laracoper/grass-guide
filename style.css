@@ -32,6 +32,7 @@ nav a:hover {
 /* Блок рефки в навбаре */
 .ref-nav-block {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background: white;
     padding: 5px 10px;
