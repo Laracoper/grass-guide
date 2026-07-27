@@ -239,6 +239,6 @@ nav a:hover {
   color: #3182CE; /* Темнее при наведении */
 }
 
-#grass-link{
-    text-decoration:none;
+.grass-link{
+    text-decoration: none;
 }
